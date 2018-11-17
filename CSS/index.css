@@ -24,10 +24,11 @@
 }
 
 #cabinet {
-  background-image: url("../Photos/cabinet.jpg");
+  height: 9em;
+  background-image: url("../Photos/bandeau.jpg");
   background-repeat: no-repeat;
   background-position: center;
-  background-size: cover;
+  background-size: contain;
   display: flex;
 }
 
