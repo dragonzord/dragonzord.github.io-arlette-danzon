@@ -152,14 +152,19 @@
     margin-top: 3.5em;
     margin-bottom: 4em;
   }
-
+  .main div {
+    font-size: 1em;
+  }
   .about {
     margin-top: 3.5em;
     margin-bottom: 3em;
   }
-  
+  .about div {
+    font-size: 1em;
+  }
   .address {
     margin-top: -3em;
+    font-size: 1em;
   }
 }
 
@@ -171,14 +176,19 @@
     margin-top: 3em;
     margin-bottom: 3em;
   }
-  
+  .main div {
+    font-size: 0.8em;
+  }
   .about {
     margin-top: 3em;
     margin-bottom: 2em;
   }
-  
+  .about div {
+    font-size: 0.8em;
+  }
   .address {
     margin-top: -3em;
+    font-size: 1em;
   }
 }
 
@@ -187,13 +197,18 @@
     margin-top: 3em;
     margin-bottom: 2em;
   }
-
+  .main div {
+    font-size: 0.7em;
+  }
   .about {
     margin-top: 3em;
     margin-bottom: 2em;
   }
-
+  .about div {
+    font-size: 0.7em;
+  }
   .address {
     margin-top: -3em;
+    font-size: 1em;
   }
 }
