@@ -94,6 +94,9 @@ body {
   #card1, #card2, #card3, #card4, #card5, #card6 {
     grid-column: 1 / span 20;
   }
+  #email, #linkedin, #phone {
+    font-size: 1.3em;
+  }
 }
 
 @media only screen and (min-width: 610px) {
@@ -105,8 +108,5 @@ body {
 @media only screen and (max-width: 320px) {
   #card1, #card2, #card3, #card4, #card5, #card6 {
     grid-column: 1 / span 10;
-  }
-  #email, #linkedin, #phone {
-    font-size: 1.3em;
   }
 }
