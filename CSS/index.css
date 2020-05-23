@@ -89,7 +89,7 @@ body {
 }
 
 #email, #linkedin, #phone {
-  font-size: 1.5em;
+  font-size: 3em;
 }
 
 /*responsive*/
@@ -111,6 +111,6 @@ body {
     grid-column: 1 / span 10;
   }
   #email, #linkedin, #phone {
-    font-size: 3em;
+    font-size: 6em;
   }
 }
