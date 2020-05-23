@@ -1,214 +1,109 @@
-.nav {
-  height: 2.50em;
-  width: 100%;
+
+body {
+  background-color: #faf8fa;
 }
 
-.header {
-  padding: 0 5% 0 5%;
-  font-size: 1.5em;
-  font-family: cursive;
-  margin-bottom: 1.5em;
-  float: right;
+.grid {
+  display: grid;
+  grid-gap: 1em;
 }
 
-.header p {
-  font-size: 0.8em;
-  font-family: sans-serif;
+/*.card {
+  border: 0.1em lightgray solid;
+}*/
+
+#card2, #subcard3 {
+  display: none;
 }
 
-.figure {
-  height: 29em;
-  width: 100%;
-  clear: both;
-  border-radius: 3%;
+#card1 {
+  grid-area: 1 / 1 / span 20 / span 40;
 }
 
-#cabinet {
-  height: 9em;
-  background-image: url("../Photos/bandeau.jpg");
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: contain;
-  display: flex;
-  border-radius: 3%;
+#card3 {
+  grid-area: 21 / 1 / span 20 / span 40;
 }
 
-.main {
-  height: 30em;
-  margin-bottom: -3em;
-  width: 100%;
-  position: relative;
-  font-size: 1.3em;
-  font-family: sans-serif;
-  text-align: justify;
+#card4 {
+  grid-area: 41 / 1 / span 20 / span 40;
 }
 
-.main div {
-  background-color: white;
-  margin: 0;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  margin-right: -20%;
-  transform: translate(-50%, -50%);
-  line-height: 220%;
+#card5 {
+  grid-area: 61 / 1 / span 5 / span 40;
 }
 
-.about {
-  height: 30em;
-  margin-bottom: -3em;
-  width: 100%;
-  position: relative;
-  font-size: 1.3em;
-  font-family: sans-serif;
-  text-align: justify;
+#card6 {
+  grid-area: 66 / 1 / span 5 / span 40;
 }
 
-.about div {
-  background-color: white;
-  margin: 0;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  margin-right: -20%;
-  transform: translate(-50%, -50%);
-  line-height: 220%;
+.subcard {
+  margin: 2em;
+  margin-bottom: 0em;
+  margin-top: 0em;
+  /*border: 0.1em lightgray dashed;*/
 }
 
-.section2 {
-  width: 100%;
-  height: 12em;
-}
-
-.section2 div {
-  font-size: 1.6em;
-  font-family: cursive;
+#subcard1, #subcard2 {
   text-align: center;
-  margin-top: 2.5em;
+  font-family: 'KoHo', "Arial", sans-serif;
+  line-height: 1.5em;
+  font-size: 1.1em;
 }
 
-#arlette {
-  background-image: url("../Photos/Arlette.jpg");
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
-  display: flex;
+#subcard1 img {
+  border-radius: 50%;
 }
 
-#map {
-  margin-left: 5em;
-  margin-right: 5em;
-  margin-top: -2em;
-}
-
-.footer {
-  width: 100%;
-  height: 15em;
-}
-
-.logo {
+#subcard2 img {
   height: 10em;
-  margin: 3em;
-  width: 25%;
-  float: right;
+  width: 7em;
+  margin-bottom: -3em;
   border-radius: 3%;
 }
 
-#logo {
-  background-image: url("../Photos/logo.png");
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
-  display: flex;
+#subcard5 {
+  font-family: 'KoHo', "Arial", sans-serif;
+  line-height: 1.8em;
+  font-size: 1.1em;
 }
 
-.address {
+#subcard6 {
+  font-family: 'KoHo', "Arial", sans-serif;
+  line-height: 1.8em;
+  font-size: 1.1em;
+}
+
+#subcard6 img {
   height: 10em;
-  margin: 3em;
-  float: left;
-  font-size: 1.3em;
-  font-family: sans-serif;
+  width: 8em;
+}
+
+#subcard7, #subcard8 {
+  font-family: 'KoHo', "Arial", sans-serif;
+  line-height: 1.8em;
+  font-size: 1.1em;
+}
+
+#subcard9 {
+  text-align: center;
 }
 
 /*responsive*/
 
-@media only screen and (min-width: 1025px) {
-  .logo {
-    height: 20em;
+@media only screen and (max-width: 610px) {
+  #card1, #card2, #card3, #card4, #card5, #card6 {
+    grid-column: 1 / span 20;
   }
 }
 
-@media only screen and (max-width: 1200px) {
-  .main {
-    margin-bottom: 1em;
+@media only screen and (min-width: 610px) {
+  #phone {
+    display: none;
   }
 }
 
-@media only screen and (max-width: 1025px) {
-  .figure {
-    height: 25em;
-  }
-  .main {
-    margin-top: 3.5em;
-    margin-bottom: 4em;
-  }
-  .main div {
-    font-size: 1em;
-  }
-  .about {
-    margin-top: 3.5em;
-    margin-bottom: 3em;
-  }
-  .about div {
-    font-size: 1em;
-  }
-  .address {
-    margin-top: -3em;
-    font-size: 1em;
-  }
-}
-
-@media only screen and (max-width: 750px) {
-  .figure {
-    height: 15em;
-  }
-  .main {
-    margin-top: 3em;
-    margin-bottom: 3em;
-  }
-  .main div {
-    font-size: 0.8em;
-  }
-  .about {
-    margin-top: 3em;
-    margin-bottom: 2em;
-  }
-  .about div {
-    font-size: 0.8em;
-  }
-  .address {
-    margin-top: -3em;
-    font-size: 1em;
-  }
-}
-
-@media only screen and (max-width: 450px) {
-  .main {
-    margin-top: 3em;
-    margin-bottom: 2em;
-  }
-  .main div {
-    font-size: 0.7em;
-  }
-  .about {
-    margin-top: 3em;
-    margin-bottom: 2em;
-  }
-  .about div {
-    font-size: 0.7em;
-  }
-  .address {
-    margin-top: -3em;
-    font-size: 1em;
+@media only screen and (max-width: 320px) {
+  #card1, #card2, #card3, #card4, #card5, #card6 {
+    grid-column: 1 / span 10;
   }
 }
